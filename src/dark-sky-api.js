@@ -22,9 +22,7 @@ const config = {
   ]
 };
 
-class DarkSkyApi {
-  // darkSkyApi; instance of dark sky skeleton
-  // initialized; weather the instance of dark sky api has lat and long set
+class DarkSkyApi {// darkSkyApi; instance of dark sky skeleton // initialized; weather the instance of dark sky api has lat and long set
   // _units;
   // _language;
   // _time
@@ -82,8 +80,7 @@ class DarkSkyApi {
   }
 
   /**
-   * Set language for response summaries
-   * @param {String} value - language token
+   * Set language for response summaries  * @param {String} value - language token
    */
   language(value) {
     if (config.acceptedLanguage.indexOf(value) === -1) {
@@ -242,7 +239,8 @@ class DarkSkyApi {
     if (this._units === 'auto') {
       console.warn(config.warningMessage.cantGuessUnits); // eslint-disable-line no-console
       unitsId = 'us';
-    } else {
+    } 
+    else {
       unitsId = this._units;
     }
 
